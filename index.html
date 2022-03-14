@@ -97,6 +97,7 @@
                 type: 'GET',
                 url: 'http://pythonapp-env.eba-iffutpdr.ap-northeast-2.elasticbeanstalk.com/file/count',
                 success: function (data) {
+                    console.log("getCount() Response", data);
                     $("#count").html(data.count);
                 },
             });
